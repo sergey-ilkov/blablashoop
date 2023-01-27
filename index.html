@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLA-BLA SCHOOl</title>
+    <link rel="icon" type="image/png" href="images/icon/globe.png" />
+
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animation.css">
+</head>
+
+<body>
+    <div class="wrapper">
+
+
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <a class="header__logo logo" href="#"><img src="images/logo.png" alt="logo-icon"></a>
+                    <div class="header__contact">
+                        <div class="header__contact-item">
+                            <a class="header__phone-link" href="tel:+48792765778">
+                                <svg class="icon-phone" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M16.9876 18C14.6478 18 12.4469 17.5575 10.3849 16.6725C8.32226 15.7875 6.52243 14.5764 4.98536 13.0392C3.4477 11.5014 2.23281 9.7014 1.34069 7.6392C0.447967 5.5764 0.001607 3.3675 0.001607 1.0125C-0.0133917 0.7425 0.0766003 0.5061 0.271583 0.3033C0.466565 0.1011 0.706544 0 0.991519 0H4.50121C4.77118 0 5.00366 0.1011 5.19864 0.3033C5.39363 0.5061 5.49112 0.75 5.49112 1.035C5.49112 1.695 5.53611 2.3175 5.62611 2.9025C5.7161 3.4875 5.85858 4.0425 6.05357 4.5675C6.12856 4.7325 6.14356 4.9011 6.09856 5.0733C6.05357 5.2461 5.96358 5.4075 5.82859 5.5575L3.57879 7.8075C4.22373 9.1275 5.13865 10.38 6.32354 11.565C7.50844 12.75 8.78332 13.695 10.1482 14.4L12.398 12.15C12.533 12.015 12.6905 11.925 12.8705 11.88C13.0504 11.835 13.2304 11.85 13.4104 11.925C13.9654 12.105 14.5389 12.2436 15.1311 12.3408C15.7238 12.4386 16.3351 12.4875 16.9651 12.4875C17.2501 12.4875 17.4939 12.5925 17.6967 12.8025C17.8989 13.0125 18 13.2675 18 13.5675V17.01C18 17.28 17.9025 17.5125 17.7075 17.7075C17.5125 17.9025 17.2726 18 16.9876 18ZM16.2002 9C16.2002 6.99 15.5027 5.2875 14.1078 3.8925C12.713 2.4975 11.0106 1.8 9.0008 1.8V0C10.2457 0 11.4156 0.2361 12.5105 0.7083C13.6054 1.1811 14.5578 1.8225 15.3677 2.6325C16.1777 3.4425 16.8187 4.395 17.2909 5.49C17.7636 6.585 18 7.755 18 9H16.2002ZM12.6005 9C12.6005 8.01 12.248 7.1625 11.5431 6.4575C10.8381 5.7525 9.99072 5.4 9.0008 5.4V3.6C10.5007 3.6 11.7756 4.125 12.8255 5.175C13.8754 6.225 14.4003 7.5 14.4003 9H12.6005Z"
+                                        fill="#4C4840" />
+                                </svg>
+                                <span>+48 792-765-778</span>
+                            </a>
+                        </div>
+                        <div class="header__contact-item-border"></div>
+                        <div class="header__contact-item">
+                            <a class="header__link-email" href="mailto:Buiro.bpmt@gmail.com">
+                                <svg width="23" height="18" viewBox="0 0 23 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M2.25 18C1.63125 18 1.10175 17.7799 0.6615 17.3396C0.2205 16.8986 0 16.3687 0 15.75V2.25C0 1.63125 0.2205 1.10175 0.6615 0.6615C1.10175 0.2205 1.63125 0 2.25 0H20.25C20.8687 0 21.3986 0.2205 21.8396 0.6615C22.2799 1.10175 22.5 1.63125 22.5 2.25V15.75C22.5 16.3687 22.2799 16.8986 21.8396 17.3396C21.3986 17.7799 20.8687 18 20.25 18H2.25ZM11.25 9.92812C11.3438 9.92812 11.442 9.91387 11.5448 9.88538C11.6482 9.85763 11.7469 9.81563 11.8406 9.75938L19.8 4.78125C19.95 4.6875 20.0625 4.5705 20.1375 4.43025C20.2125 4.28925 20.25 4.13438 20.25 3.96563C20.25 3.59063 20.0906 3.30938 19.7719 3.12188C19.4531 2.93438 19.125 2.94375 18.7875 3.15L11.25 7.875L3.7125 3.15C3.375 2.94375 3.04688 2.93888 2.72813 3.13538C2.40938 3.33263 2.25 3.60938 2.25 3.96563C2.25 4.15313 2.2875 4.317 2.3625 4.45725C2.4375 4.59825 2.55 4.70625 2.7 4.78125L10.6594 9.75938C10.7531 9.81563 10.8518 9.85763 10.9552 9.88538C11.058 9.91387 11.1562 9.92812 11.25 9.92812Z"
+                                        fill="#4C4840" />
+                                </svg>
+                                <span>Buiro.bpmt@gmail.com</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="header__buttons">
+                        <div class="lang-box">
+                            <div class="lang" data-lang="ru">
+                                <span>Ru</span>
+                            </div>
+                            <div class="lang-select">
+                                <div class="lang-select__option lang-ua" data-lang="ua">
+                                    <span>Ua</span>
+                                </div>
+                                <div class="lang-select__option lang-ru" data-lang="ru">
+                                    <span>Ru</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="header__btn btn close-menu" href="#">Перезвоните сейчас</button>
+                        <button class="burger__menu"><span></span></button>
+                    </div>
+                </div>
+            </div>
+            <div class="header__hidden-menu hidden-menu">
+                <div class="container">
+                    <div class="hidden-menu__inner">
+                        <nav class="nav">
+                            <ul class="header__menu">
+                                <li class="header__menu-item"><a class="header__menu-link" href="#">Главная</a></li>
+                                <li class="header__menu-item"><a class="header__menu-link" href="#">О нас</a></li>
+                                <li class="header__menu-item"><a class="header__menu-link" href="#">Курсы</a></li>
+                                <li class="header__menu-item"><a class="header__menu-link" href="#">Контакты</a></li>
+                            </ul>
+                        </nav>
+                        <div class="header__phones hidden-menu-item">
+                            <a class="header__phone-link close-menu" href="tel:+08792765778">
+                                <svg class="icon-phone" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M16.9876 18C14.6478 18 12.4469 17.5575 10.3849 16.6725C8.32226 15.7875 6.52243 14.5764 4.98536 13.0392C3.4477 11.5014 2.23281 9.7014 1.34069 7.6392C0.447967 5.5764 0.001607 3.3675 0.001607 1.0125C-0.0133917 0.7425 0.0766003 0.5061 0.271583 0.3033C0.466565 0.1011 0.706544 0 0.991519 0H4.50121C4.77118 0 5.00366 0.1011 5.19864 0.3033C5.39363 0.5061 5.49112 0.75 5.49112 1.035C5.49112 1.695 5.53611 2.3175 5.62611 2.9025C5.7161 3.4875 5.85858 4.0425 6.05357 4.5675C6.12856 4.7325 6.14356 4.9011 6.09856 5.0733C6.05357 5.2461 5.96358 5.4075 5.82859 5.5575L3.57879 7.8075C4.22373 9.1275 5.13865 10.38 6.32354 11.565C7.50844 12.75 8.78332 13.695 10.1482 14.4L12.398 12.15C12.533 12.015 12.6905 11.925 12.8705 11.88C13.0504 11.835 13.2304 11.85 13.4104 11.925C13.9654 12.105 14.5389 12.2436 15.1311 12.3408C15.7238 12.4386 16.3351 12.4875 16.9651 12.4875C17.2501 12.4875 17.4939 12.5925 17.6967 12.8025C17.8989 13.0125 18 13.2675 18 13.5675V17.01C18 17.28 17.9025 17.5125 17.7075 17.7075C17.5125 17.9025 17.2726 18 16.9876 18ZM16.2002 9C16.2002 6.99 15.5027 5.2875 14.1078 3.8925C12.713 2.4975 11.0106 1.8 9.0008 1.8V0C10.2457 0 11.4156 0.2361 12.5105 0.7083C13.6054 1.1811 14.5578 1.8225 15.3677 2.6325C16.1777 3.4425 16.8187 4.395 17.2909 5.49C17.7636 6.585 18 7.755 18 9H16.2002ZM12.6005 9C12.6005 8.01 12.248 7.1625 11.5431 6.4575C10.8381 5.7525 9.99072 5.4 9.0008 5.4V3.6C10.5007 3.6 11.7756 4.125 12.8255 5.175C13.8754 6.225 14.4003 7.5 14.4003 9H12.6005Z"
+                                        fill="#4C4840" />
+                                </svg>
+                                <span>+08 792-765-778</span>
+                            </a>
+                            <a class="header__phone-link close-menu" href="tel:+08792765778">
+                                <svg class="icon-phone" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M16.9876 18C14.6478 18 12.4469 17.5575 10.3849 16.6725C8.32226 15.7875 6.52243 14.5764 4.98536 13.0392C3.4477 11.5014 2.23281 9.7014 1.34069 7.6392C0.447967 5.5764 0.001607 3.3675 0.001607 1.0125C-0.0133917 0.7425 0.0766003 0.5061 0.271583 0.3033C0.466565 0.1011 0.706544 0 0.991519 0H4.50121C4.77118 0 5.00366 0.1011 5.19864 0.3033C5.39363 0.5061 5.49112 0.75 5.49112 1.035C5.49112 1.695 5.53611 2.3175 5.62611 2.9025C5.7161 3.4875 5.85858 4.0425 6.05357 4.5675C6.12856 4.7325 6.14356 4.9011 6.09856 5.0733C6.05357 5.2461 5.96358 5.4075 5.82859 5.5575L3.57879 7.8075C4.22373 9.1275 5.13865 10.38 6.32354 11.565C7.50844 12.75 8.78332 13.695 10.1482 14.4L12.398 12.15C12.533 12.015 12.6905 11.925 12.8705 11.88C13.0504 11.835 13.2304 11.85 13.4104 11.925C13.9654 12.105 14.5389 12.2436 15.1311 12.3408C15.7238 12.4386 16.3351 12.4875 16.9651 12.4875C17.2501 12.4875 17.4939 12.5925 17.6967 12.8025C17.8989 13.0125 18 13.2675 18 13.5675V17.01C18 17.28 17.9025 17.5125 17.7075 17.7075C17.5125 17.9025 17.2726 18 16.9876 18ZM16.2002 9C16.2002 6.99 15.5027 5.2875 14.1078 3.8925C12.713 2.4975 11.0106 1.8 9.0008 1.8V0C10.2457 0 11.4156 0.2361 12.5105 0.7083C13.6054 1.1811 14.5578 1.8225 15.3677 2.6325C16.1777 3.4425 16.8187 4.395 17.2909 5.49C17.7636 6.585 18 7.755 18 9H16.2002ZM12.6005 9C12.6005 8.01 12.248 7.1625 11.5431 6.4575C10.8381 5.7525 9.99072 5.4 9.0008 5.4V3.6C10.5007 3.6 11.7756 4.125 12.8255 5.175C13.8754 6.225 14.4003 7.5 14.4003 9H12.6005Z"
+                                        fill="#4C4840" />
+                                </svg>
+                                <span>+08 792 765 443</span>
+                            </a>
+                        </div>
+                        <div class="hidden-menu-border"></div>
+                        <div class="header__social hidden-menu-item">
+                            <a class="header__socail-link header__social-whatsapp" href="#">
+                                <img class="header__social-icon" src="./images/icon/whatsapp.svg" alt="icon-whatsapp">
+                            </a>
+                            <a class="header__socail-link header__social-instagram" href="#">
+                                <img class="header__social-icon" src="./images/icon/instagram.svg" alt="icon-instagram">
+                            </a>
+                            <a class="header__socail-link header__social-facebook" href="#">
+                                <img class="header__social-icon" src="./images/icon/facebook.svg" alt="icon-facebook">
+                            </a>
+                            <a class="header__socail-link header__social-telegram" href="#">
+                                <img class="header__social-icon" src="./images/icon/telegram.svg" alt="icon-telegram">
+                            </a>
+                        </div>
+                        <div class="hidden-menu-border"></div>
+                        <div class="hidden-menu-item">
+                            <a class="header__link-email close-menu" href="mailto:Buiro.bpmt@gmail.com">
+                                <svg width="23" height="18" viewBox="0 0 23 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M2.25 18C1.63125 18 1.10175 17.7799 0.6615 17.3396C0.2205 16.8986 0 16.3687 0 15.75V2.25C0 1.63125 0.2205 1.10175 0.6615 0.6615C1.10175 0.2205 1.63125 0 2.25 0H20.25C20.8687 0 21.3986 0.2205 21.8396 0.6615C22.2799 1.10175 22.5 1.63125 22.5 2.25V15.75C22.5 16.3687 22.2799 16.8986 21.8396 17.3396C21.3986 17.7799 20.8687 18 20.25 18H2.25ZM11.25 9.92812C11.3438 9.92812 11.442 9.91387 11.5448 9.88538C11.6482 9.85763 11.7469 9.81563 11.8406 9.75938L19.8 4.78125C19.95 4.6875 20.0625 4.5705 20.1375 4.43025C20.2125 4.28925 20.25 4.13438 20.25 3.96563C20.25 3.59063 20.0906 3.30938 19.7719 3.12188C19.4531 2.93438 19.125 2.94375 18.7875 3.15L11.25 7.875L3.7125 3.15C3.375 2.94375 3.04688 2.93888 2.72813 3.13538C2.40938 3.33263 2.25 3.60938 2.25 3.96563C2.25 4.15313 2.2875 4.317 2.3625 4.45725C2.4375 4.59825 2.55 4.70625 2.7 4.78125L10.6594 9.75938C10.7531 9.81563 10.8518 9.85763 10.9552 9.88538C11.058 9.91387 11.1562 9.92812 11.25 9.92812Z"
+                                        fill="#4C4840" />
+                                </svg>
+                                <span>Buiro.bpmt@gmail.com</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </header>
+
+
+        <section class="hero">
+            <div class="container">
+                <div class="hero__top">
+                    <div class="swiper hero-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="hero-slider__item">
+                                    <div class="hero-slider__content">
+                                        <h1 class="hero-slider__title">
+                                            Не знаете с чего начать изучение?
+                                        </h1>
+                                        <p class="hero-slider__text">
+                                            Пройдите тест на опредиление уровня языка и мы подберем програму для вас
+                                        </p>
+                                        <form class="hero-slider__form">
+                                            <input class="hero-slider__form-input" type="tel" placeholder="Ваш номер телефона">
+                                            <button class="hero-slider__form-btn btn" type="submit">Записаться</button>
+                                        </form>
+                                    </div>
+                                    <div class="hero-slider__images">
+                                        <img class="hero-slider__img" src="./images/hero/hero-slider-1.png" alt="hero-img">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="hero-slider__item">
+                                    <div class="hero-slider__content">
+                                        <h1 class="hero-slider__title">
+                                            Акционное предложение
+                                        </h1>
+                                        <p class="hero-slider__text">
+                                            Записывайтесь на пробное занятие прямо сейчас
+                                        </p>
+
+                                        <form class="hero-slider__form">
+                                            <input class="hero-slider__form-input" type="tel" placeholder="Ваш номер телефона">
+                                            <button class="hero-slider__form-btn btn" type="submit">Записаться</button>
+                                        </form>
+                                    </div>
+                                    <div class="hero-slider__images">
+                                        <img class="hero-slider__img" src="./images/hero/hero-slider-1.png" alt="hero-img">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="hero-slider__item">
+                                    <div class="hero-slider__content">
+                                        <h1 class="hero-slider__title">
+                                            Курсы польського и английського языка
+                                        </h1>
+                                        <p class="hero-slider__text">
+                                            Записывайтесь на пробное занятие прямо сейчас
+                                        </p>
+                                        <form class="hero-slider__form">
+                                            <input class="hero-slider__form-input" type="tel" placeholder="Ваш номер телефона">
+                                            <button class="hero-slider__form-btn btn" type="submit">Записаться</button>
+                                        </form>
+                                    </div>
+                                    <div class="hero-slider__images">
+                                        <img class="hero-slider__img" src="./images/hero/hero-slider-1.png" alt="hero-img">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="hero-slider__item">
+                                    <div class="hero-slider__content">
+                                        <h1 class="hero-slider__title">
+                                            Изучение английского с нуля до С1
+                                        </h1>
+                                        <p class="hero-slider__text">
+                                            Узнайте больше про программу курса изучения английского
+                                        </p>
+                                        <form class="hero-slider__form">
+                                            <input class="hero-slider__form-input" type="tel" placeholder="Ваш номер телефона">
+                                            <button class="hero-slider__form-btn btn" type="submit">Записаться</button>
+                                        </form>
+                                    </div>
+                                    <div class="hero-slider__images">
+                                        <img class="hero-slider__img" src="./images/hero/hero-slider-1.png" alt="hero-img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-count-slide"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="indicators">
+            <div class="container">
+                <div class="indicators__items">
+                    <div class="indicators__item">
+                        <div class="indicators__item-number">
+                            <span class="indicators__item-number-num" data-max="7">7</span>
+                            <span class="indicators__item-number-text">лет</span>
+                        </div>
+                        <p class="indicators__item-number-description">Нашей школе BLA-BLA SCHOOL</p>
+                    </div>
+                    <div class="indicators__item">
+                        <div class="indicators__item-number">
+                            <span class="indicators__item-number-num" data-max="37">37</span>
+                        </div>
+                        <p class="indicators__item-number-description">Сотрудников</p>
+                    </div>
+                    <div class="indicators__item">
+                        <div class="indicators__item-number">
+                            <span class="indicators__item-number-num" data-max="7000">7000</span>
+                            <span class="indicators__item-number-text">+</span>
+                        </div>
+                        <p class="indicators__item-number-description">Выпусников</p>
+                    </div>
+                </div>
+                <div class="indicators-decor__items indicators-decor__items-left">
+                    <div class="indicators-decor__item indicators-decor__item-left-1" data-speed="2"></div>
+                    <div class="indicators-decor__item indicators-decor__item-left-2" data-speed="1.8"></div>
+                    <div class="indicators-decor__item indicators-decor__item-left-3" data-speed="1.5"></div>
+                </div>
+                <div class="indicators-decor__items indicators-decor__items-right">
+                    <div class="indicators-decor__item indicators-decor__item-right-1" data-speed="1.2"></div>
+                    <div class="indicators-decor__item indicators-decor__item-right-2" data-speed="1.6"></div>
+                </div>
+                <div class="indicators-decor__items indicators-decor__items-bottom">
+                    <div class="indicators-decor__item indicators-decor__item-bottom-1" data-speed="0.8"></div>
+                    <div class="indicators-decor__item indicators-decor__item-bottom-2" data-speed="2.5"></div>
+                    <div class="indicators-decor__item indicators-decor__item-bottom-3" data-speed="1.8"></div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="course-selection">
+            <div class="container">
+                <h2 class="course-selection__title title-h2">Выбор курса</h2>
+                <div class="course-selection__items">
+                    <div class="course-selection__item _anim-item">
+                        <div class="course-selection__content">
+                            <h3 class="course-selection__content-title title-h3">Курс английського языка</h3>
+                            <p class="course-selection__content-text text">
+                                Знание английского языка сейчас – это практически обязательный навык
+                                для всех, кто хочет быть успешным и востребованным. Поэтому, даже оказавшись в Польше, стоит задуматься не
+                                только об изучении польского, но и о том, чтобы начать усиленно заниматься английским.
+                            </p>
+                            <a class="course-selection__content-btn btn" href="#">Больше про курс</a>
+                        </div>
+                        <img class="course-selection__item-img" src="./images/course-selection/course-selection-1.jpg"
+                            alt="course-selection-img">
+                    </div>
+                    <div class="course-selection__item _anim-item">
+                        <div class="course-selection__content">
+                            <h3 class="course-selection__content-title title-h3">Курс польського языка</h3>
+                            <p class="course-selection__content-text text">
+                                Наша миссия – помочь вам почувствовать себя уверенно в Польше: стать на ноги и заговорить на иностранном
+                                языке как на родном.
+                                Начните знакомство с Польшей. Приглашаем вас стать частью нашей большой семьи!
+                            </p>
+                            <a class="course-selection__content-btn btn" href="#">Больше про курс</a>
+                        </div>
+                        <img class="course-selection__item-img" src="./images/course-selection/course-selection-2.jpg"
+                            alt="course-selection-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="about">
+            <div class="container">
+                <div class="about__items">
+                    <div class="about__item about__item-content">
+                        <h2 class="about__title title-h2">О нас</h2>
+                        <p class="about__item-text text about__item-text-1 _anim-item">
+                            BLA-BLA SCHOOL это не только школа польского, английского и немецкого языка в Варшаве, для взрослых и детей, это
+                            база для приезжих, где можно получить все услуги и консультации для иммигрантов. Жильё, работа, учеба,
+                            экскурсии, легализация, открытие бизнеса, даже услуги психолога и переводчика, что бы каждый мог чувствовать
+                            себя как дома!
+                        </p>
+                        <p class="about__item-text text about__item-text-2 _anim-item">
+                            Совместная программа курсов и обучение в школе полицеальной дают возможность получить учебную визу. Оставить
+                            заявкуна такое обучение в BLA-BLA SCHOOL, можно в любое время. Учиться никогда не поздно нужно пробовать, и
+                            брать от жизни все!
+                        </p>
+                    </div>
+                    <div class="about__item about__item-images _anim-item">
+                        <img class="about__item-img" src="./images/about/about-img-1.jpg" alt="about-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="level">
+            <div class="container">
+                <h2 class="level__title title-h2">
+                    Узнай свой уровень языка <span>прямо сейчас</span>
+                </h2>
+                <p class="level__descripton _anim-item">Пройдите тест и мы подберем вам програму обучения для вашего уровня</p>
+                <div class="level__tabs _anim-item">
+                    <div class="level-tabs__buttons">
+                        <button class="level-tabs__btn level-tabs__btn-en btn level-tabs__btn--active" data-tabs-path="en">Тест на уровень
+                            английского</button>
+                        <button class="level-tabs__btn level-tabs__btn-pl btn" data-tabs-path="pl">Тест на уровень польского</button>
+                    </div>
+                    <div class="level-tabs__inner">
+                        <div class="level-tabs__content level-tabs__content--active" data-tabs-target="en">
+                            <form class="level__form" id="en">
+                                <div class="level-form__item level-form__item--active level-form__item-1">
+                                    <h3 class="level-form__title title-h3">Первый вопрос</h3>
+                                    <p class="level-form__text text">
+                                        <span style="color: #33D5BE;">Английский первый тест</span> Text of question Text of question Text
+                                        of question Text of question Text of question Text of
+                                        question Text of question Text of question Text of question Text of question Text of question Text
+                                        of question Text of question Text of question
+                                    </p>
+                                    <ul class="level-form__checkbox level-form__checkbox-en-1">
+                                        <li class="level-form__checkbox-li">
+                                            <input type="checkbox" id="en-1-1" name="en-1-1" value="option 1">
+                                            <label for="en-1-1"> Тhe first answer option 1</label><br>
+                                        </li>
+                                        <li class="level-form__checkbox-li">
+                                            <input type="checkbox" id="en-1-2" name="en-1-2" value="option 2">
+                                            <label for="en-1-2"> Тhe first answer option 2</label><br>
+                                        </li>
+                                        <li class="level-form__checkbox-li">
+                                            <input type="checkbox" id="en-1-3" name="en-1-3" value="option 3">
+                                            <label for="en-1-3"> Тhe first answer option 3</label><br>
+                                        </li>
+                                        <li class="level-form__checkbox-li">
+                                            <input type="checkbox" id="en-1-4" name="en-1-4" value="option 4">
+                                            <label for="en-1-4"> Тhe first answer option 4</label><br>
+                                        </li>
+                                    </ul>
+                                    <div class="level-form__buttons">
+                                        <button class="level-form__btn btn level-form__btn-prev" data-direction="prev">Назад</button>
+                                        <button class="level-form__btn btn level-form__btn-next" data-direction="next">Дальше</button>
+                                    </div>
+                                </div>
+                                <div class="level-form__item level-form__item-2">
+                                    <h3 class="level-form__title title-h3">Второй вопрос</h3>
+                                    <p class="level-form__text text">
+                                        <span style="color: #33D5BE;">Английский второй тест</span> Text of question Text of question Text
+                                        of question Text of question Text of
+                                        question
+                                        Text of
+                                        question
+                                        Text of question Text of question Text of question Text of question Text of question Text of
+                                        question
+                                        Text of question Text of question
+                                    </p>
+                                    <ul class="level-form__checkbox level-form__checkbox-en-2">
+                                        <li class="level-form__checkbox-li">
+                                            <input type="checkbox" id="en-2-1" name="en-2-1" value="option 1">
+                                            <label for="en-2-1"> Тhe first answer option 1</label><br>
+                                        </li>
+                                        <li class="level-form__checkbox-li">
+                                            <input type="checkbox" id="en-2-2" name="en-2-2" value="option 2">
+                                            <label for="en-2-2"> Тhe first answer option 2</label><br>
+                                        </li>
+                                        <li class="level-form__checkbox-li">
+                                            <input type="checkbox" id="en-2-3" name="en-2-3" value="option 3">
+                                            <label for="en-2-3"> Тhe first answer option 3</label><br>
+                                        </li>
+                                        <li class="level-form__checkbox-li">
+                                            <input type="checkbox" id="en-2-4" name="en-2-4" value="option 4">
+                                            <label for="en-2-4"> Тhe first answer option 4</label><br>
+                                        </li>
+                                    </ul>
+                                    <div class="level-form__buttons">
+                                        <button class="level-form__btn btn level-form__btn-prev" data-direction="prev">Назад</button>
+                                        <button class="level-form__btn btn level-form__btn-next" data-direction="next">Дальше</button>
+                                    </div>
+                                </div>
+                                <div class="level-form__item level-form__item-3">
+                                    <h3 class="level-form__title title-h3">Третий вопрос</h3>
+                                    <p class="level-form__text text">
+                                        <span style="color: #33D5BE;">Английский третий тест</span> Text of question Text of question Text
+                                        of question Text of question Text of
+                                        question
+                                        Text of
+                                        question
+                                        Text of question Text of question Text of question Text of question Text of question Text of
+                                        question
+                                        Text of question Text of question
+                                    </p>
+                                    <ul class="level-form__checkbox level-form__checkbox-en-1">
+                                        <li class="level-form__checkbox-li">
+                                            <input type="checkbox" id="en-3-1" name="en-3-1" value="option 1">
+                                            <label for="en-3-1"> Тhe first answer option 1</label><br>
+                                        </li>
+                                        <li class="level-form__checkbox-li">
+                                            <input type="checkbox" id="en-3-2" name="en-3-2" value="option 2">
+                                            <label for="en-3-2"> Тhe first answer option 2</label><br>
+                                        </li>
+                                        <li class="level-form__checkbox-li">
+                                            <input type="checkbox" id="en-3-3" name="en-3-3" value="option 3">
+                                            <label for="en-3-3"> Тhe first answer option 3</label><br>
+                                        </li>
+                                        <li class="level-form__checkbox-li">
+                                            <input type="checkbox" id="en-3-4" name="en-3-4" value="option 4">
+                                            <label for="en-3-4"> Тhe first answer option 4</label><br>
+                                        </li>
+                                    </ul>
+                                    <div class="level-form__buttons">
+                                        <button class="level-form__btn btn level-form__btn-prev" data-direction="prev">Назад</button>
+                                        <button class="level-form__btn btn level-form__btn-next" data-direction="send">Отправить</button>
+                                    </div>
+                                </div>
+
+                            </form>
+                            <div class="level-tabs__item">
+
+                            </div>
+                        </div>
+
+                        <div class="level-tabs__content" data-tabs-target="pl">
+                            <form class="level__form" id="pl">
+                                <div class="level-form__item level-form__item-1">
+                                    <h3 class="level-form__title title-h3">Первый вопрос</h3>
+                                    <p class="level-form__text text">
+                                        <span style="color: #33D5BE;">Польский первый тест</span> Tekst pytania Tekst pytania Tekst pytania
+                                        Tekst pytania Tekst pytania Tekst pytania
+                                        Tekst pytania Tekst pytania Tekst pytania Tekst pytania Tekst pytania Tekst pytania Tekst pytania
+                                        Tekst
+                                        pytania
+                                    </p>
+                                    <ul class="level-form__checkbox level-form__checkbox-pl-1">
+                                        <li class="level-form__checkbox-li">
+                                            <input type="checkbox" id="pl-1-1" name="pl-1-1" value="option 1">
+                                            <label for="pl-1-1"> Тhe first answer option 1</label><br>
+                                        </li>
+                                        <li class="level-form__checkbox-li">
+                                            <input type="checkbox" id="pl-1-2" name="pl-1-2" value="option 2">
+                                            <label for="pl-1-2"> Тhe first answer option 2</label><br>
+                                        </li>
+                                        <li class="level-form__checkbox-li">
+                                            <input type="checkbox" id="pl-1-3" name="pl-1-3" value="option 3">
+                                            <label for="pl-1-3"> Тhe first answer option 3</label><br>
+                                        </li>
+                                        <li class="level-form__checkbox-li">
+                                            <input type="checkbox" id="pl-1-4" name="pl-1-4" value="option 4">
+                                            <label for="pl-1-4"> Тhe first answer option 4</label><br>
+                                        </li>
+                                    </ul>
+                                    <div class="level-form__buttons">
+                                        <button class="level-form__btn btn btn btn level-form__btn-prev"
+                                            data-direction="prev">Назад</button>
+                                        <button class="level-form__btn btn btn btn level-form__btn-next"
+                                            data-direction="next">Дальше</button>
+                                    </div>
+                                </div>
+                                <div class="level-form__item level-form__item-2">
+                                    <h3 class="level-form__title title-h3">Второй вопрос</h3>
+                                    <p class="level-form__text text">
+                                        <span style="color: #33D5BE;">Польский второй тест</span> Tekst pytania Tekst pytania Tekst pytania
+                                        Tekst pytania Tekst pytania Tekst pytania
+                                        Tekst pytania Tekst pytania Tekst pytania Tekst pytania Tekst pytania Tekst pytania Tekst pytania
+                                        Tekst
+                                        pytania
+                                    </p>
+                                    <ul class="level-form__checkbox level-form__checkbox-pl-2">
+                                        <li class="level-form__checkbox-li">
+                                            <input type="checkbox" id="pl-2-1" name="pl-2-1" value="option 1">
+                                            <label for="pl-2-1"> Тhe first answer option 1</label><br>
+                                        </li>
+                                        <li class="level-form__checkbox-li">
+                                            <input type="checkbox" id="pl-2-2" name="pl-2-2" value="option 2">
+                                            <label for="pl-2-2"> Тhe first answer option 2</label><br>
+                                        </li>
+                                        <li class="level-form__checkbox-li">
+                                            <input type="checkbox" id="pl-2-3" name="pl-2-3" value="option 3">
+                                            <label for="pl-2-3"> Тhe first answer option 3</label><br>
+                                        </li>
+                                        <li class="level-form__checkbox-li">
+                                            <input type="checkbox" id="pl-2-4" name="pl-2-4" value="option 4">
+                                            <label for="pl-2-4"> Тhe first answer option 4</label><br>
+                                        </li>
+                                    </ul>
+                                    <div class="level-form__buttons">
+                                        <button class="level-form__btn btn btn level-form__btn-prev" data-direction="prev">Назад</button>
+                                        <button class="level-form__btn btn btn level-form__btn-next" data-direction="next">Дальше</button>
+                                    </div>
+                                </div>
+                                <div class="level-form__item level-form__item-3">
+                                    <h3 class="level-form__title title-h3">Третий вопрос</h3>
+                                    <p class="level-form__text text">
+                                        <span style="color: #33D5BE;">Польский третий тест</span>Tekst pytania Tekst pytania Tekst pytania
+                                        Tekst pytania Tekst pytania Tekst pytania
+                                        Tekst pytania Tekst pytania Tekst pytania Tekst pytania Tekst pytania Tekst pytania Tekst pytania
+                                        Tekst
+                                        pytania
+                                    </p>
+                                    <ul class="level-form__checkbox level-form__checkbox-pl-1">
+                                        <li class="level-form__checkbox-li">
+                                            <input type="checkbox" id="pl-3-1" name="pl-3-1" value="option 1">
+                                            <label for="pl-3-1"> Тhe first answer option 1</label><br>
+                                        </li>
+                                        <li class="level-form__checkbox-li">
+                                            <input type="checkbox" id="pl-3-2" name="pl-3-2" value="option 2">
+                                            <label for="pl-3-2"> Тhe first answer option 2</label><br>
+                                        </li>
+                                        <li class="level-form__checkbox-li">
+                                            <input type="checkbox" id="pl-3-3" name="pl-3-3" value="option 3">
+                                            <label for="pl-3-3"> Тhe first answer option 3</label><br>
+                                        </li>
+                                        <li class="level-form__checkbox-li">
+                                            <input type="checkbox" id="pl-3-4" name="pl-3-4" value="option 4">
+                                            <label for="pl-3-4"> Тhe first answer option 4</label><br>
+                                        </li>
+                                    </ul>
+                                    <div class="level-form__buttons">
+                                        <button class="level-form__btn btn level-form__btn-prev" data-direction="prev">Назад</button>
+                                        <button class="level-form__btn btn level-form__btn-next" data-direction="send">Отправить</button>
+                                    </div>
+                                </div>
+
+                            </form>
+
+                            <div class="level-tabs__item">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="news">
+            <div class="container">
+                <h2 class="news__title title-h2">Новости</h2>
+                <div class="swiper news-slider _anim-item">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="news-slider__item">
+                                <div class="news-slider__item-images">
+                                    <img class="news-slider__item-img" src="./images/news/news-1.jpg" alt="news-img">
+                                </div>
+                                <div class="news-slider__item-body">
+                                    <h3 class="news-slider__item-title title-h3">Новина 1</h3>
+                                    <p class="news-slider__item-text text">
+                                        Опис новини Опис новини Опис новини Опис новини Опис новини Опис новини
+                                    </p>
+                                    <a class="news-slider__item-link" href="#">Подробнее...</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="news-slider__item">
+                                <div class="news-slider__item-images">
+                                    <img class="news-slider__item-img" src="./images/news/news-2.jpg" alt="news-img">
+                                </div>
+                                <div class="news-slider__item-body">
+                                    <h3 class="news-slider__item-title title-h3">Новина 2</h3>
+                                    <p class="news-slider__item-text text">
+                                        Опис новини Опис новини Опис новини Опис новини Опис новини Опис новини
+                                    </p>
+                                    <a class="news-slider__item-link" href="#">Подробнее...</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="news-slider__item">
+                                <div class="news-slider__item-images">
+                                    <img class="news-slider__item-img" src="./images/news/news-3.jpg" alt="news-img">
+                                </div>
+                                <div class="news-slider__item-body">
+                                    <h3 class="news-slider__item-title title-h3">Новина 3</h3>
+                                    <p class="news-slider__item-text text">
+                                        Опис новини Опис новини Опис новини Опис новини Опис новини Опис новини
+                                    </p>
+                                    <a class="news-slider__item-link" href="#">Подробнее...</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="news-slider__item">
+                                <div class="news-slider__item-images">
+                                    <img class="news-slider__item-img" src="./images/news/news-1.jpg" alt="news-img">
+                                </div>
+                                <div class="news-slider__item-body">
+                                    <h3 class="news-slider__item-title title-h3">Новина 1</h3>
+                                    <p class="news-slider__item-text text">
+                                        Опис новини Опис новини Опис новини Опис новини Опис новини Опис новини
+                                    </p>
+                                    <a class="news-slider__item-link" href="#">Подробнее...</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="news-slider__item">
+                                <div class="news-slider__item-images">
+                                    <img class="news-slider__item-img" src="./images/news/news-2.jpg" alt="news-img">
+                                </div>
+                                <div class="news-slider__item-body">
+                                    <h3 class="news-slider__item-title title-h3">Новина 2</h3>
+                                    <p class="news-slider__item-text text">
+                                        Опис новини Опис новини Опис новини Опис новини Опис новини Опис новини
+                                    </p>
+                                    <a class="news-slider__item-link" href="#">Подробнее...</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="news-slider__item">
+                                <div class="news-slider__item-images">
+                                    <img class="news-slider__item-img" src="./images/news/news-3.jpg" alt="news-img">
+                                </div>
+                                <div class="news-slider__item-body">
+                                    <h3 class="news-slider__item-title title-h3">Новина 3</h3>
+                                    <p class="news-slider__item-text text">
+                                        Опис новини Опис новини Опис новини Опис новини Опис новини Опис новини
+                                    </p>
+                                    <a class="news-slider__item-link" href="#">Подробнее...</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-slider__navigation">
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <section class="map">
+            <div class="map__inner">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9773.46523865131!2d20.994422253784183!3d52.236729844191245!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47193594b33fb6e9%3A0x7996b8bd9cf3b46b!2zTWlrb8WCYWphIEtvcGVybmlrYSAzMCwgMDAtMzM2IFdhcnN6YXdhLCDQn9C-0LvRjNGI0LA!5e0!3m2!1sru!2sus!4v1674645209303!5m2!1sru!2sus"
+                    width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-top">
+                    <div class="footer__logo"><img class="footer__logo-img" src="./images/logo-footer.png" alt="footer-logo"></div>
+                    <div class="footer-contacts">
+                        <h3 class="footer-contacts__title ">Контакты</h3>
+                        <div class="footer-contacts__items">
+                            <div class="footer-contacts__item">
+                                <div class="footer-contacts__phones">
+                                    <a class="footer-contacts__phone-link" href="tel:+0879270065335">
+                                        <svg width="32" height="31" viewBox="0 0 32 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M30.2002 31C26.0405 31 22.1278 30.2379 18.462 28.7137C14.7951 27.1896 11.5954 25.1038 8.86287 22.4564C6.12924 19.808 3.96944 16.708 2.38344 13.1564C0.796386 9.6038 0.00285689 5.79958 0.00285689 1.74375C-0.0238074 1.27875 0.136178 0.871616 0.482814 0.52235C0.82945 0.174116 1.25608 0 1.7627 0H8.00214C8.4821 0 8.8954 0.174116 9.24203 0.52235C9.58867 0.871616 9.76199 1.29167 9.76199 1.7825C9.76199 2.91917 9.84198 3.99125 10.002 4.99875C10.162 6.00625 10.4153 6.96208 10.7619 7.86625C10.8952 8.15042 10.9219 8.44078 10.8419 8.73735C10.7619 9.03495 10.6019 9.31292 10.3619 9.57125L6.36229 13.4462C7.50885 15.7196 9.13537 17.8767 11.2419 19.9175C13.3483 21.9583 15.6148 23.5858 18.0412 24.8L22.0409 20.925C22.2809 20.6925 22.5608 20.5375 22.8808 20.46C23.2008 20.3825 23.5208 20.4083 23.8407 20.5375C24.8273 20.8475 25.847 21.0862 26.8997 21.2536C27.9534 21.422 29.0403 21.5062 30.1602 21.5062C30.6668 21.5062 31.1003 21.6871 31.4608 22.0487C31.8203 22.4104 32 22.8496 32 23.3663V29.295C32 29.76 31.8267 30.1604 31.48 30.4962C31.1334 30.8321 30.7068 31 30.2002 31ZM28.8003 15.5C28.8003 12.0383 27.5604 9.10625 25.0806 6.70375C22.6008 4.30125 19.5744 3.1 16.0014 3.1V0C18.2146 0 20.2944 0.406617 22.2409 1.21985C24.1874 2.03412 25.8805 3.13875 27.3204 4.53375C28.7603 5.92875 29.8999 7.56917 30.7393 9.455C31.5798 11.3408 32 13.3558 32 15.5H28.8003ZM22.4009 15.5C22.4009 13.795 21.7742 12.3354 20.521 11.1213C19.2678 9.90708 17.7613 9.3 16.0014 9.3V6.2C18.6679 6.2 20.9343 7.10417 22.8008 8.9125C24.6673 10.7208 25.6006 12.9167 25.6006 15.5H22.4009Z"
+                                                fill="#33D5BE" />
+                                        </svg>
+                                        <span>+08 792-765-335</span>
+                                    </a>
+                                    <a class="footer-contacts__phone-link" href="tel:+0879200765778">
+                                        <svg width="32" height="31" viewBox="0 0 32 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M30.2002 31C26.0405 31 22.1278 30.2379 18.462 28.7137C14.7951 27.1896 11.5954 25.1038 8.86287 22.4564C6.12924 19.808 3.96944 16.708 2.38344 13.1564C0.796386 9.6038 0.00285689 5.79958 0.00285689 1.74375C-0.0238074 1.27875 0.136178 0.871616 0.482814 0.52235C0.82945 0.174116 1.25608 0 1.7627 0H8.00214C8.4821 0 8.8954 0.174116 9.24203 0.52235C9.58867 0.871616 9.76199 1.29167 9.76199 1.7825C9.76199 2.91917 9.84198 3.99125 10.002 4.99875C10.162 6.00625 10.4153 6.96208 10.7619 7.86625C10.8952 8.15042 10.9219 8.44078 10.8419 8.73735C10.7619 9.03495 10.6019 9.31292 10.3619 9.57125L6.36229 13.4462C7.50885 15.7196 9.13537 17.8767 11.2419 19.9175C13.3483 21.9583 15.6148 23.5858 18.0412 24.8L22.0409 20.925C22.2809 20.6925 22.5608 20.5375 22.8808 20.46C23.2008 20.3825 23.5208 20.4083 23.8407 20.5375C24.8273 20.8475 25.847 21.0862 26.8997 21.2536C27.9534 21.422 29.0403 21.5062 30.1602 21.5062C30.6668 21.5062 31.1003 21.6871 31.4608 22.0487C31.8203 22.4104 32 22.8496 32 23.3663V29.295C32 29.76 31.8267 30.1604 31.48 30.4962C31.1334 30.8321 30.7068 31 30.2002 31ZM28.8003 15.5C28.8003 12.0383 27.5604 9.10625 25.0806 6.70375C22.6008 4.30125 19.5744 3.1 16.0014 3.1V0C18.2146 0 20.2944 0.406617 22.2409 1.21985C24.1874 2.03412 25.8805 3.13875 27.3204 4.53375C28.7603 5.92875 29.8999 7.56917 30.7393 9.455C31.5798 11.3408 32 13.3558 32 15.5H28.8003ZM22.4009 15.5C22.4009 13.795 21.7742 12.3354 20.521 11.1213C19.2678 9.90708 17.7613 9.3 16.0014 9.3V6.2C18.6679 6.2 20.9343 7.10417 22.8008 8.9125C24.6673 10.7208 25.6006 12.9167 25.6006 15.5H22.4009Z"
+                                                fill="#33D5BE" />
+                                        </svg>
+                                        <span>+08 792-765-778</span>
+                                    </a>
+                                    <a class="footer-contacts__phone-link" href="tel:+0870092765443">
+                                        <svg width="32" height="31" viewBox="0 0 32 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M30.2002 31C26.0405 31 22.1278 30.2379 18.462 28.7137C14.7951 27.1896 11.5954 25.1038 8.86287 22.4564C6.12924 19.808 3.96944 16.708 2.38344 13.1564C0.796386 9.6038 0.00285689 5.79958 0.00285689 1.74375C-0.0238074 1.27875 0.136178 0.871616 0.482814 0.52235C0.82945 0.174116 1.25608 0 1.7627 0H8.00214C8.4821 0 8.8954 0.174116 9.24203 0.52235C9.58867 0.871616 9.76199 1.29167 9.76199 1.7825C9.76199 2.91917 9.84198 3.99125 10.002 4.99875C10.162 6.00625 10.4153 6.96208 10.7619 7.86625C10.8952 8.15042 10.9219 8.44078 10.8419 8.73735C10.7619 9.03495 10.6019 9.31292 10.3619 9.57125L6.36229 13.4462C7.50885 15.7196 9.13537 17.8767 11.2419 19.9175C13.3483 21.9583 15.6148 23.5858 18.0412 24.8L22.0409 20.925C22.2809 20.6925 22.5608 20.5375 22.8808 20.46C23.2008 20.3825 23.5208 20.4083 23.8407 20.5375C24.8273 20.8475 25.847 21.0862 26.8997 21.2536C27.9534 21.422 29.0403 21.5062 30.1602 21.5062C30.6668 21.5062 31.1003 21.6871 31.4608 22.0487C31.8203 22.4104 32 22.8496 32 23.3663V29.295C32 29.76 31.8267 30.1604 31.48 30.4962C31.1334 30.8321 30.7068 31 30.2002 31ZM28.8003 15.5C28.8003 12.0383 27.5604 9.10625 25.0806 6.70375C22.6008 4.30125 19.5744 3.1 16.0014 3.1V0C18.2146 0 20.2944 0.406617 22.2409 1.21985C24.1874 2.03412 25.8805 3.13875 27.3204 4.53375C28.7603 5.92875 29.8999 7.56917 30.7393 9.455C31.5798 11.3408 32 13.3558 32 15.5H28.8003ZM22.4009 15.5C22.4009 13.795 21.7742 12.3354 20.521 11.1213C19.2678 9.90708 17.7613 9.3 16.0014 9.3V6.2C18.6679 6.2 20.9343 7.10417 22.8008 8.9125C24.6673 10.7208 25.6006 12.9167 25.6006 15.5H22.4009Z"
+                                                fill="#33D5BE" />
+                                        </svg>
+                                        <span>+08 792-765-443</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="footer-contacts__item footer-contacts__item-address">
+                                <a class="footer-contacts__email-link" href="mailto:Buiro.bpmt@gmail.com">
+                                    <svg width="33" height="26" viewBox="0 0 33 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M3.3 26C2.3925 26 1.6159 25.682 0.9702 25.0461C0.3234 24.4091 0 23.6437 0 22.75V3.25C0 2.35625 0.3234 1.59142 0.9702 0.9555C1.6159 0.3185 2.3925 0 3.3 0H29.7C30.6075 0 31.3846 0.3185 32.0314 0.9555C32.6772 1.59142 33 2.35625 33 3.25V22.75C33 23.6437 32.6772 24.4091 32.0314 25.0461C31.3846 25.682 30.6075 26 29.7 26H3.3ZM16.5 14.3406C16.6375 14.3406 16.7816 14.32 16.9323 14.2789C17.0841 14.2388 17.2287 14.1781 17.3662 14.0969L29.04 6.90625C29.26 6.77083 29.425 6.60183 29.535 6.39925C29.645 6.19558 29.7 5.97188 29.7 5.72813C29.7 5.18646 29.4663 4.78021 28.9988 4.50938C28.5312 4.23854 28.05 4.25208 27.555 4.55L16.5 11.375L5.445 4.55C4.95 4.25208 4.46875 4.24504 4.00125 4.52888C3.53375 4.81379 3.3 5.21354 3.3 5.72813C3.3 5.99896 3.355 6.23567 3.465 6.43825C3.575 6.64192 3.74 6.79792 3.96 6.90625L15.6337 14.0969C15.7713 14.1781 15.9159 14.2388 16.0677 14.2789C16.2184 14.32 16.3625 14.3406 16.5 14.3406Z"
+                                            fill="#33D5BE" />
+                                    </svg>
+                                    <span>Buiro.bpmt@gmail.com</span>
+                                </a>
+                                <p class="footer-contacts__address">Warszawa ul.Kopernika 30, 00-336</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="footer-bottom__item"><a class="footer-bottom__item-link" href="#">Политика конфиденциальности</a></div>
+                    <div class="footer-bottom__item">
+                        <div class="footer-contacts__social">
+                            <a class="footer-contacts__socail-link contacts__social-whatsapp" href="#">
+                                <img class="footer-contacts__social-icon" src="./images/icon/whatsapp.svg" alt="icon-whatsapp">
+                            </a>
+                            <a class="footer-contacts__socail-link contacts__social-instagram" href="#">
+                                <img class="footer-contacts__social-icon" src="./images/icon/instagram.svg" alt="icon-instagram">
+                            </a>
+                            <a class="footer-contacts__socail-link contacts__social-facebook" href="#">
+                                <img class="contacts__social-icon" src="./images/icon/facebook.svg" alt="icon-facebook">
+                            </a>
+                            <a class="footer-contacts__socail-link header__contacts-telegram" href="#">
+                                <img class="footer-contacts__social-icon" src="./images/icon/telegram.svg" alt="icon-telegram">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer-bottom__item">
+                        <p class="footer-bottom__item-copy">© BLA-BLA SCHOOL 2022</p>
+                    </div>
+                </div>
+            </div>
+            <button id="top-btn" class="top-btn">
+                <svg width="40" height="23" viewBox="0 0 40 23" fill="#33D5BE" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M0.791557 18.4424L18.5224 0.582948C18.7335 0.370966 18.9622 0.221166 19.2084 0.133547C19.4547 0.0445147 19.7186 -8.8653e-07 20 -8.74228e-07C20.2814 -8.61926e-07 20.5453 0.0445147 20.7916 0.133547C21.0378 0.221166 21.2665 0.370966 21.4776 0.582948L39.2612 18.4424C39.7537 18.937 40 19.5553 40 20.2972C40 21.0392 39.7361 21.6751 39.2084 22.2051C38.6807 22.735 38.0651 23 37.3615 23C36.6579 23 36.0422 22.735 35.5145 22.2051L20 6.62442L4.48549 22.2051C3.99296 22.6997 3.38645 22.947 2.66596 22.947C1.94406 22.947 1.31926 22.682 0.791556 22.1521C0.26385 21.6221 -9.18107e-07 21.0038 -8.87221e-07 20.2972C-8.56334e-07 19.5906 0.26385 18.9724 0.791557 18.4424Z" />
+                </svg>
+            </button>
+        </footer>
+    </div>
+
+
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
